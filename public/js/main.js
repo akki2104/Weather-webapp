@@ -24,7 +24,7 @@ else if (d.getHours() == 0) {
     }
 }
 else {
-    time.innerHTML = d.getHours() + ":" + d.getMinutes() + " AM";
+    time.innerHTML = "0" + d.getHours() + ":" + d.getMinutes() + " AM";
     if (d.getMinutes() < 10) {
         time.innerHTML = "0" + (d.getHours()) + ":" + "0" +d.getMinutes() + " AM";
     }
