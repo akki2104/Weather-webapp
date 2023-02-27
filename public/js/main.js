@@ -12,21 +12,21 @@ const desc = document.getElementById('desc');
 const time = document.getElementById('time');
 const d = new Date();
 if (d.getHours() > 12) {
-    time.innerHTML = "0" + (d.getHours()) + ":" + d.getMinutes() + " PM";
+    time.innerHTML = (d.getHours()) + ":" + d.getMinutes() + " PM";
     if (d.getMinutes() < 10) {
-        time.innerHTML = "0" + (d.getHours()) + ":" + "0"+d.getMinutes() + " PM";
+        time.innerHTML = (d.getHours()) + ":" + "0" +d.getMinutes() + " PM";
     }
 }
 else if (d.getHours() == 0) {
     time.innerHTML = "0" + (d.getHours()) + ":" + d.getMinutes() + " AM";
     if (d.getMinutes() < 10) {
-        time.innerHTML = "0" + (d.getHours()) + ":" + "0"+d.getMinutes() + " AM";
+        time.innerHTML = "0" + (d.getHours()) + ":" + "0" +d.getMinutes() + " AM";
     }
 }
 else {
     time.innerHTML = d.getHours() + ":" + d.getMinutes() + " AM";
     if (d.getMinutes() < 10) {
-        time.innerHTML = "0" + (d.getHours()) + ":" + "0"+d.getMinutes() + " AM";
+        time.innerHTML = "0" + (d.getHours()) + ":" + "0" +d.getMinutes() + " AM";
     }
 }
 
